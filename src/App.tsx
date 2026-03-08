@@ -5,6 +5,9 @@ import Multimarca from './pages/Multimarca';
 import Mercedes from './pages/Mercedes';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
+import AvisoLegal from './pages/AvisoLegal';
+import Privacidad from './pages/Privacidad';
+import Cookies from './pages/Cookies';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
@@ -18,6 +21,9 @@ export default function App() {
           <Route path="mercedes" element={<Mercedes />} />
           <Route path="contacto" element={<Contacto />} />
           <Route path="nosotros" element={<Nosotros />} />
+          <Route path="aviso-legal" element={<AvisoLegal />} />
+          <Route path="privacidad" element={<Privacidad />} />
+          <Route path="cookies" element={<Cookies />} />
           <Route path="*" element={<div className="p-24 text-center text-2xl">Página no encontrada</div>} />
         </Route>
       </Routes>
